@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coding Team</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="images/monlogo.png" alt="Mon Logo">
+      </div>
+      
+    <nav>
+      <ul>
+        <li><a href="#"class="active-btn">Accueil</a></li>
+        <li><a href="a-propos.html">Apropos</a></li>
+        <li><a href="realisations.html">Realisations</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1><span class="red">Analyse de Performance</span> <span class="bold">Digitale</span></h1>
+      <div class="discount">Formation 100% Digitale</div>
+      <p>
+        La formation <strong>Analyse de Performance Digitale</strong> est conçue pour former des experts capables d'optimiser la performance des systèmes digitaux, de gérer les projets web et d'analyser les données pour en tirer des conclusions stratégiques.
+      </p>
+      <p>
+        Rejoignez l'équipe <strong>CODING TEAM</strong>, un groupe passionné de développeurs et d'analystes de performance digitale, prêts à résoudre les défis technologiques avec des solutions innovantes.
+      </p>
+      <a href="equipe.html" class="order-btn">Rencontrez l'équipe</a>
+    </div>
+  
+    <div class="hero-image">
+      <div class="slider">
+        <img src="images/ux-design.jpg" alt="Formation en Analyse de Performance Digitale">
+        <img src="images/seo-sea.jpg" alt="CODING TEAM en action">
+        <img src="images/ml.jpg" alt="Les projets de CODING TEAM">
+      </div>
+    </div>
+  </section>
+  
+
+  <script>
+    const slider = document.querySelector('.slider');
+    let index = 0;
+
+    setInterval(() => {
+      index = (index + 1) % 3;
+      slider.style.transform = `translateX(-${index * 100}%)`;
+    }, 3000);
+  </script>
+
+  <footer class="main-footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <p>&copy; 2025 <strong>CODING TEAM</strong>. Tous droits réservés.</p>
+      </div>
+      <div class="footer-right">
+        <a href="mailto:contact@codingteam.com">contact@codingteam.com</a> |
+        <a href="tel:+221783326970">+221 78 332 69 70</a> |
+        <span>Dakar, Sénégal</span>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
